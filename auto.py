@@ -19,9 +19,9 @@ from selenium.webdriver.support import expected_conditions as EC
 # import xlsxwriter
 # from openpyxl.formula.translate import Translator
 # from dateutil.parser import parse
-import pandas as pd
-from selenium.webdriver.common.action_chains import ActionChains
-import autopy
+# import pandas as pd
+# from selenium.webdriver.common.action_chains import ActionChains
+# import autopy
 
 DRIVER = 'chromedriver'
 options = webdriver.ChromeOptions()
