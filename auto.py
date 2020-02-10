@@ -15,13 +15,13 @@ import os
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import autoit
-import xlsxwriter
-from openpyxl.formula.translate import Translator
-from dateutil.parser import parse
-import pandas as pd
-from selenium.webdriver.common.action_chains import ActionChains
-import autopy
+# import autoit
+# import xlsxwriter
+# from openpyxl.formula.translate import Translator
+# from dateutil.parser import parse
+# import pandas as pd
+# from selenium.webdriver.common.action_chains import ActionChains
+# import autopy
 
 DRIVER = 'chromedriver'
 options = webdriver.ChromeOptions()
@@ -47,7 +47,7 @@ for x in range(1000):
     
     f= open("tanggal.txt","r")
     bacaline = f.read().split()
-    tanggal = "document.getElementById('dateFilter').value="+"'"+bacaline[idx]+"'"
+    tanggal = "document.getElementById('dateFilter').value="+"'"+bacaline[x]+"'"
     print(tanggal)
     time.sleep(1)
     driver.execute_script(tanggal)
